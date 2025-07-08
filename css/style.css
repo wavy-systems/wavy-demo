@@ -1,0 +1,79 @@
+/* COMMON STYLES */
+
+:root {
+    --color-primary: #FCB9AA;
+    --color-secondary: #55CBCD;
+    --color-tertiary: #FFDBCC;
+    --color-bright: #FAF3DD;
+    --color-dark: #111111;
+    --font-stack: "Lexend", "Murecho", sans-serif;
+    --font-serif: "Josefin Slab", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-stack);
+}
+
+.serif {
+    font-family: var(--font-serif);
+}
+
+.unselectable {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+main {
+    background-color: var(--color-bright);
+}
+
+main>* {
+    max-width: 72rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+}
+
+header img {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+header .search-container {
+    display: flex;
+    width: 20rem;
+    margin-left: auto;
+}
+
+header #search-bar {
+    width: 18rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    border: 0;
+}
+
+header #search-button {
+    width: 2rem;
+    border: 0;
+}
+
+footer {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    font-size: 0.75rem;
+}
